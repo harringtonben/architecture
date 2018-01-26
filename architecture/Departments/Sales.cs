@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace architecture.Departments
 {
-    class Sales
+    class Sales : Department
     {
         public int NumberOfDeals { get; set; }
         public bool AreTools { get; set; }
