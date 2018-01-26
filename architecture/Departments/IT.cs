@@ -3,11 +3,12 @@
 
 namespace architecture.Departments
 {
-    class IT : Department, ISecurity
+    class IT : Department, ISecurity, IOnCall
     {
         public string TechStack { get; set; }
         public bool AreLazy { get; set; }
         public bool SecurityClearance { get; set; }
+        public bool OnCall { get;  set; }
 
         public void IsCleared()
         {
@@ -15,6 +16,13 @@ namespace architecture.Departments
             {
                 Console.WriteLine($"People on this team are allowed to write to the database because their security clearance gives them access to.");
             }
+        }
+
+        public string IsOnCall()
+        {
+            return OnCall
+            ? "This team is currently on call in case of emergencies"
+            : "This team is currently not on call";
         }
 
         public void OurDevelopers()

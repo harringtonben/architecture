@@ -25,7 +25,8 @@ namespace architecture
                 Employee_Count = 11,
                 TechStack = "Python/React",
                 AreLazy = false,
-                SecurityClearance = true
+                SecurityClearance = true,
+                OnCall = true
             };
 
             var humanresources = new HR
@@ -58,7 +59,8 @@ namespace architecture
                 Employee_Count = 4,
                 TechStack = "Javascript/React",
                 AreLazy = true,
-                SecurityClearance = false
+                SecurityClearance = false,
+                OnCall = false
             };
 
             var Departments = new List<Department>
@@ -87,6 +89,7 @@ namespace architecture
                     case IT i:
                         i.OurDevelopers();
                         i.IsCleared();
+                        Console.WriteLine(i.IsOnCall());
                         break;
                 }
             }

@@ -45,6 +45,7 @@
     <Compile Include="Departments\BasicDepartment.cs" />
     <Compile Include="Departments\Department.cs" />
     <Compile Include="Departments\HR.cs" />
+    <Compile Include="Departments\IOnCall.cs" />
     <Compile Include="Departments\ISecurity.cs" />
     <Compile Include="Departments\IT.cs" />
     <Compile Include="Departments\Sales.cs" />
