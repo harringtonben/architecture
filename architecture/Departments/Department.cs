@@ -8,7 +8,7 @@ namespace architecture.Departments
         public string Supervisor { get; set; }
         public int Employee_Count { get; set; }
 
-        public void Deparment_Description()
+        public virtual void Deparment_Description()
         {
             Console.WriteLine($"{Name} is overseen by {Supervisor} and has {Employee_Count} employees.");
         }

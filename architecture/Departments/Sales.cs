@@ -23,5 +23,11 @@ namespace architecture.Departments
             }
 
         }
+
+        public override void Deparment_Description()
+        {
+            NumberOfDeals += 15;
+            base.Deparment_Description();
+        }
     }
 }
