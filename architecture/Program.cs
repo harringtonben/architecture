@@ -38,7 +38,48 @@ namespace architecture
                 Rules = 15
             };
 
-            
+            var support = new BasicDepartment
+            {
+                Name = "Support",
+                Supervisor = "Benton",
+                Employee_Count = 16
+            };
+
+            var marketing = new BasicDepartment
+            {
+                Name = "Marketing",
+                Supervisor = "Colby",
+                Employee_Count = 16
+            };
+
+            var Departments = new List<Department>
+            {
+                sales,
+                developers,
+                humanresources,
+                support,
+                marketing
+            };
+
+            foreach (var department in Departments)
+            {
+                department.Deparment_Description();
+
+                switch (department)
+                {
+                    case Sales s:
+                        s.SalesGoals();
+                        break;
+                    case HR h:
+                        h.ImInTrouble();
+                        break;
+                    case IT i:
+                        i.OurDevelopers();
+                        break;
+                }
+            }
+
+            Console.Read();
         }
     }
 }

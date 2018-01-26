@@ -15,11 +15,11 @@ namespace architecture.Departments
         {
             if (AreTools)
             {
-                Console.WriteLine($"Our sales guys have closed {NumberOfDeals} this year, but man are they tools.");
+                Console.WriteLine($"Our sales guys have closed {NumberOfDeals} deals this year, but man are they tools.");
             }
             else
             {
-                Console.WriteLine($"Our sales guys have closed {NumberOfDeals} this year, and they are actually pretty alright.");
+                Console.WriteLine($"Our sales guys have closed {NumberOfDeals} deals this year, and they are actually pretty alright.");
             }
 
         }

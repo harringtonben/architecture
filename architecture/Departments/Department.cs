@@ -10,7 +10,7 @@ namespace architecture.Departments
 
         public void Deparment_Description()
         {
-            Console.WriteLine($"{Name} is overseen by {Supervisor} and has {Employee_Count} number of employees.");
+            Console.WriteLine($"{Name} is overseen by {Supervisor} and has {Employee_Count} employees.");
         }
     }
 }

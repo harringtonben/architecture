@@ -13,7 +13,7 @@ namespace architecture.Departments
 
         public void ImInTrouble()
         {
-            Console.WriteLine($"The {GetType().Name} department has filed {Grievances} against me because I have broken {Rules} rules.");
+            Console.WriteLine($"The {GetType().Name} department has filed {Grievances} complaints against me because I have broken {Rules} rules.");
         }
     }
 }
