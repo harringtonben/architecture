@@ -3,10 +3,19 @@
 
 namespace architecture.Departments
 {
-    class IT : Department
+    class IT : Department, ISecurity
     {
         public string TechStack { get; set; }
         public bool AreLazy { get; set; }
+        public bool SecurityClearance { get; set; }
+
+        public void IsCleared()
+        {
+            if (SecurityClearance)
+            {
+                Console.WriteLine($"People on this team are allowed to write to the database because their security clearance gives them access to.");
+            }
+        }
 
         public void OurDevelopers()
         {
