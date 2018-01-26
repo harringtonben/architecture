@@ -24,7 +24,9 @@ namespace architecture
                 Supervisor = "Jason",
                 Employee_Count = 11,
                 TechStack = "Python/React",
-                AreLazy = false
+                AreLazy = false,
+                SecurityClearance = true,
+                OnCall = true
             };
 
             var humanresources = new HR
@@ -50,13 +52,25 @@ namespace architecture
                 Employee_Count = 16
             };
 
+            var qa = new IT
+            {
+                Name = "Quality Automation",
+                Supervisor = "Josh",
+                Employee_Count = 4,
+                TechStack = "Javascript/React",
+                AreLazy = true,
+                SecurityClearance = false,
+                OnCall = false
+            };
+
             var Departments = new List<Department>
             {
                 sales,
                 developers,
                 humanresources,
                 support,
-                marketing
+                marketing,
+                qa
             };
 
             foreach (var department in Departments)
@@ -74,6 +88,8 @@ namespace architecture
                         break;
                     case IT i:
                         i.OurDevelopers();
+                        i.IsCleared();
+                        Console.WriteLine(i.IsOnCall());
                         break;
                 }
             }

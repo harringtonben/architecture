@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace architecture.Departments
 {
-    class BasicDepartment : Department
+    interface ISecurity
     {
-       
+        bool SecurityClearance { get; set; }
+
+        void IsCleared();
+
     }
 }

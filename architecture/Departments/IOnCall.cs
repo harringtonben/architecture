@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace architecture.Departments
 {
-    class BasicDepartment : Department
+    interface IOnCall
     {
-       
+        bool OnCall { get; set; }
+
+        string IsOnCall();
     }
 }
