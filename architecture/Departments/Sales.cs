@@ -29,5 +29,11 @@ namespace architecture.Departments
             NumberOfDeals += 15;
             base.Deparment_Description();
         }
+
+        public override void SetBudget(double budget)
+        {
+            Budget = budget + 20000;
+            Console.WriteLine($"The budget for this depratment is {Budget}");
+        }
     }
 }

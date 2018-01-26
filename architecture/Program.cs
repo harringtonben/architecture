@@ -1,9 +1,7 @@
 ﻿using architecture.Departments;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace architecture
 {
@@ -64,6 +62,7 @@ namespace architecture
             foreach (var department in Departments)
             {
                 department.Deparment_Description();
+                department.SetBudget(75000);
 
                 switch (department)
                 {

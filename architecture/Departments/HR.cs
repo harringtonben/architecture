@@ -25,5 +25,12 @@ namespace architecture.Departments
             }
             base.Deparment_Description();
         }
+
+        public override void SetBudget(double budget)
+        {
+            Budget = budget + 2000;
+            Console.WriteLine($"The budget for this depratment is {Budget}");
+        }
+
     }
 }

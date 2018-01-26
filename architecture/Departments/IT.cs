@@ -19,5 +19,11 @@ namespace architecture.Departments
                 Console.WriteLine($"Our developers all code in {TechStack} and they rock the cazba!");
             }
         }
+
+        public override void SetBudget(double budget)
+        {
+            Budget = budget + 6000;
+            Console.WriteLine($"The budget for this depratment is {Budget}");
+        }
     }
 }
