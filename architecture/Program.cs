@@ -73,6 +73,21 @@ namespace architecture
                 qa
             };
 
+            qa.AddEmployee(new Employee { FirstName = "Brian", LastName = "Fuzzel" });
+            qa.AddEmployee(new Employee { FirstName = "Brandon", LastName = "Wannamaker" });
+            qa.AddEmployee(new Employee { FirstName = "Josh", LastName = "Cypher" });
+            qa.AddEmployee(new Employee { FirstName = "Megan", LastName = "Heineken" });
+            sales.AddEmployee(new Employee { FirstName = "Jordan", LastName = "Cocklin" });
+            sales.AddEmployee(new Employee { FirstName = "Jordan", LastName = "Pratt" });
+            sales.AddEmployee(new Employee { FirstName = "Joey", LastName = "Davis" });
+            sales.AddEmployee(new Employee { FirstName = "Pete", LastName = "Oliveras" });
+            marketing.AddEmployee(new Employee { FirstName = "Nora", LastName = "Snoddy" });
+            marketing.AddEmployee(new Employee { FirstName = "Christina", LastName = "Brady" });
+            marketing.AddEmployee(new Employee { FirstName = "Greg", LastName = "Frank" });
+            humanresources.AddEmployee(new Employee { FirstName = "Christine", LastName = "McPherson" });
+            humanresources.AddEmployee(new Employee { FirstName = "Priya", LastName = "Pappu" });
+
+
             foreach (var department in Departments)
             {
                 department.Deparment_Description();

@@ -1,9 +1,12 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace architecture.Departments
 {
     abstract class Department
     {
+        string _employees;
+        public List<Employee> Employees { get; }
         public string Name { get; set; }
         public string Supervisor { get; set; }
         public double Budget { get; set; }
@@ -19,5 +22,11 @@ namespace architecture.Departments
             Budget = budget;
             Console.WriteLine($"The budget for this depratment is {Budget}");
         }
+
+        public void AddEmployee(Employee employee)
+        {
+            Employees.Add(employee);
+        }
+
     }
 }
