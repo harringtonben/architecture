@@ -5,8 +5,8 @@ namespace architecture.Departments
 {
     abstract class Department
     {
-        string _employees;
-        public List<Employee> Employees { get; }
+        List<Employee> _employees = new List<Employee>();
+        public List<Employee> Employees { get => _employees; }
         public string Name { get; set; }
         public string Supervisor { get; set; }
         public double Budget { get; set; }
@@ -25,7 +25,7 @@ namespace architecture.Departments
 
         public void AddEmployee(Employee employee)
         {
-            Employees.Add(employee);
+            _employees.Add(employee);
         }
 
     }

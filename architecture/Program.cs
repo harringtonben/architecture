@@ -86,7 +86,14 @@ namespace architecture
             marketing.AddEmployee(new Employee { FirstName = "Greg", LastName = "Frank" });
             humanresources.AddEmployee(new Employee { FirstName = "Christine", LastName = "McPherson" });
             humanresources.AddEmployee(new Employee { FirstName = "Priya", LastName = "Pappu" });
-
+            support.AddEmployee(new Employee { FirstName = "Benton", LastName = "Cummings" });
+            support.AddEmployee(new Employee { FirstName = "Heather", LastName = "Sturm" });
+            support.AddEmployee(new Employee { FirstName = "Ross", LastName = "Cochran" });
+            support.AddEmployee(new Employee { FirstName = "Zach", LastName = "Sharpe" });
+            developers.AddEmployee(new Employee { FirstName = "Courey", LastName = "Elliott" });
+            developers.AddEmployee(new Employee { FirstName = "Seth", LastName = "Buntin" });
+            developers.AddEmployee(new Employee { FirstName = "Kris", LastName = "Plunkett" });
+            developers.AddEmployee(new Employee { FirstName = "Donald", LastName = "Thompson" });
 
             foreach (var department in Departments)
             {
@@ -106,6 +113,15 @@ namespace architecture
                         i.IsCleared();
                         Console.WriteLine(i.IsOnCall());
                         break;
+                }
+            }
+
+            foreach(var department in Departments)
+            {
+                Console.WriteLine($"{department.Name} has the following employees:");
+                foreach (var employee in department.Employees)
+                {
+                    Console.WriteLine($"{employee.FirstName} {employee.LastName}");
                 }
             }
 
